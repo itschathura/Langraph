@@ -1,0 +1,21 @@
+[project]
+name = "langraph"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Chathura Dharmasiri", email = "chathuramaheshdharmasiride@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-google-genai>=4.5.2",
+    "langgraph>=1.2.24",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+langraph = "langraph:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
